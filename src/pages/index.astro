@@ -1,0 +1,211 @@
+---
+import Layout from "../layout/Layout.astro"
+import VideoNetwork from "../assets/network.mp4";
+import August from "../assets/August.mp4";
+---
+
+<Layout title="Index">
+    <div class="w-full h-screen flex justify-center items-center font-lato" id="home">
+        <div class="w-full max-w-[1560px] h-full flex items-center relative">
+            <div class="w-full h-full flex flex-col justify-center items-center absolute -z-10 top-0">
+                <video class="w-full h-full object-cover" autoplay loop muted>
+                    <source src={VideoNetwork} type="video/mp4" />
+                </video>
+
+            </div>
+            <div class="w-full h-full flex justify-center items-center">
+                <div class="max-w-[700px] bg-slate-600/50 backdrop-blur-md backdrop-brightness-125 m-4 p-4 rounded-lg flex flex-col gap-2 leading-none">
+                    <div class="w-full flex justify-center">
+                        <ion-icon class="text-yellow-500 text-[64px] md:text-[80px]" name="globe-outline"></ion-icon>
+                    </div>
+                    <h1 class="text-2xl lg:text-3xl leading-none text-center font-bold text-white">En SecureByte protegemos tus datos y potenciamos tu software</h1>
+                    <p class="italic text-center text-yellow-500 lg:text-lg">Desarrollamos soluciones de software a la medida de tus necesidades</p>
+    
+                    <div class="w-full flex justify-center">
+                        <a href="#contact">
+                            <button class="px-4 py-2 border border-yellow-500 text-yellow-500 rounded-sm lg:text-lg hover:bg-yellow-500 hover:text-gray-900 transition-all ease-out duration-300">
+                                Habla con un experto
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Nosotros -->
+    <div class="w-full bg-gray-700 flex justify-center" id="about-us">
+
+        <div class="gap-4 font-roboto p-4 w-full max-w-[1000px]">
+            <div class="flex flex-col gap-2">
+                <div class="w-full flex justify-center text-yellow-500 text-[64px]" id="icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                </div>
+                <h2 class="text-3xl font-bold text-center text-yellow-500">Nosotros</h2>
+                <div class="">
+                    <h3 class="text-lg font-bold text-center text-yellow-400">¿Quiénes somos?</h3>
+                    <p class="text-justify text-white font-thin">
+                        En <b>SecureByte</b>, somos una empresa dedicada al desarrollo de software y ciberseguridad, apasionados por crear soluciones tecnológicas innovadoras y seguras que impulsen el éxito de nuestros clientes. Nuestro equipo de expertos combina creatividad, experiencia y compromiso para ofrecer servicios de alta calidad, diseñados a la medida de tus necesidades. Guiados por valores como la integridad, la excelencia y la responsabilidad, trabajamos para proteger tu información, optimizar tus procesos y construir un futuro digital sostenible. ¡En SecureByte, protegemos tus datos y potenciamos tu negocio!
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg text-center font-bold text-yellow-500">Misión</h3>
+                        <p class="italic  font-thin text-white text-justify">
+                            Proteger y empoderar a las empresas a través de soluciones innovadoras de software y ciberseguridad, asegurando la integridad, confidencialidad y disponibilidad de su información crítica. Nos esforzamos por ofrecer servicios personalizados que promuevan el crecimiento, la eficiencia y la confianza digital en un mundo conectado.
+                        </p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg text-center font-bold text-yellow-500">Visión</h3>
+                        <p class="italic  font-thin text-white text-justify">
+                            Ser líderes globales en el desarrollo de software y ciberseguridad, reconocidos por nuestra excelencia técnica, enfoque en la innovación y compromiso con un mundo más seguro y eficiente. Buscamos transformar la manera en que las organizaciones gestionan sus operaciones digitales, construyendo un futuro donde la tecnología y la seguridad coexistan sin límites.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-10 flex justify-center">
+                <a href="https://view.genially.com/673d313a9fe7189d5c7be0b4/presentation-digital-technology-presentation" target="_blank">
+                    <button class="px-4 py-3 bg-yellow-500 text-gray-900 rounded-md">
+                        Ver presentación
+                    </button>
+                </a>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold text-center text-yellow-500">Nuestros valores</h2>
+                <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-bold text-yellow-500">Innovación</h3>
+                        <p class="text-white font-thin">
+                            Nos esforzamos por estar a la vanguardia de la tecnología, desarrollando soluciones creativas y eficientes que resuelvan los desafíos más complejos.
+                        </p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-bold text-yellow-500">Integridad</h3>
+                        <p class="text-white font-thin">
+                            Actuamos con honestidad, transparencia y responsabilidad en todas nuestras interacciones, promoviendo la confianza y el respeto mutuo.
+                        </p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-bold text-yellow-500">Excelencia</h3>
+                        <p class="text-white font-thin">
+                            Nos comprometemos a ofrecer servicios y productos de la más alta calidad, superando constantemente las expectativas de nuestros clientes.
+                        </p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-bold text-yellow-500">Colaboración</h3>
+                        <p class="text-white font-thin">
+                            Fomentamos un ambiente de trabajo colaborativo, donde el intercambio de ideas y el trabajo en equipo son fundamentales para alcanzar nuestros objetivos comunes.
+                        </p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-bold text-yellow-500">Responsabilidad</h3>
+                        <p class="text-white font-thin">
+                            Asumimos la responsabilidad de nuestras acciones y decisiones, asegurando un impacto positivo en nuestros clientes, empleados y la sociedad en general.
+                        </p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-bold text-yellow-500">Sostenibilidad</h3>
+                        <p class="text-white font-thin">
+                            Nos comprometemos a implementar prácticas sostenibles en todas nuestras operaciones, minimizando nuestro impacto ambiental y promoviendo un futuro más verde.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Servicios -->
+    <div class="w-full bg-gray-800 flex justify-center" id="services">
+        <div class="flex flex-col gap-4 p-4 max-w-[1000px]">
+            <div class="flex flex-col">
+                <div class="w-full flex justify-center text-yellow-500 text-[64px]" id="icon">
+                    <ion-icon name="construct-outline"></ion-icon>
+                </div>
+                <h2 class="text-3xl font-bold text-center text-yellow-500">Nuestros servicios</h2>
+                <p class="text-center text-white font-thin">
+                    Ofrecemos una amplia gama de servicios de software y ciberseguridad para satisfacer las necesidades de tu empresa.
+                </p>
+            </div>
+            <div class="flex flex-col gap-4"></div>
+                <div class="flex flex-col">
+                    <h3 class="text-lg font-bold text-yellow-500">Desarrollo de Software a Medida</h3>
+                    <p class="text-white font-thin">
+                        Creamos soluciones de software personalizadas que se adaptan a las necesidades específicas de tu negocio, garantizando eficiencia y escalabilidad.
+                    </p>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-lg font-bold text-yellow-500">Consultoría en Ciberseguridad</h3>
+                    <p class="text-white font-thin">
+                        Ofrecemos servicios de consultoría para proteger tu infraestructura digital, identificando y mitigando riesgos de seguridad.
+                    </p>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-lg font-bold text-yellow-500">Integración de Sistemas</h3>
+                    <p class="text-white font-thin">
+                        Facilitamos la integración de diferentes sistemas y aplicaciones para optimizar los procesos de tu empresa y mejorar la productividad.
+                    </p>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-lg font-bold text-yellow-500">Desarrollo de Aplicaciones Móviles</h3>
+                    <p class="text-white font-thin">
+                        Diseñamos y desarrollamos aplicaciones móviles intuitivas y funcionales para mejorar la experiencia de tus clientes y empleados.
+                    </p>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="text-lg font-bold text-yellow-500">Soporte Técnico y Mantenimiento</h3>
+                    <p class="text-white font-thin">
+                        Brindamos soporte técnico continuo y servicios de mantenimiento para asegurar el correcto funcionamiento de tus sistemas y aplicaciones.
+                    </p>
+                </div>
+                <div class="py-2 w-full flex flex-col gap-4 justify-center" id="Video">
+                    <video class="w-full h-full object-cover" controls loop>
+                        <source src={August} type="video/mp4" />
+                    </video>
+                    <div class="w-full flex justify-center">
+                        <a href="https://share.vidnoz.com/aivideo?id=aishare-HQjqy9d2TPORZd6582XnhqXM173236147911783800" target="_blank">
+                            <button class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-md">
+                                Ver video
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contcacto -->
+    <div class="w-full flex justify-center bg-slate-700" id="contact">
+        <div class="w-full max-w-[1000px]">
+            <div class="p-4">
+                <div class="flex flex-col">
+                    <div class="w-full flex justify-center text-yellow-500 text-[64px]" id="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <h2 class="text-3xl font-bold text-center text-yellow-500">Contáctanos</h2>
+                    <p class="text-center text-white font-thin">
+                        Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.
+                    </p>
+                </div>
+                <form class="flex flex-col gap-4 mt-4">
+                    <div class="flex flex-col">
+                        <label for="name" class="text-yellow-500">Nombre</label>
+                        <input type="text" id="name" class="p-2 rounded-md bg-gray-300 text-black font-montserrat outline-none focus:shadow focus:shadow-yellow-500" required autocomplete="off" />
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email" class="text-yellow-500">Correo Electrónico</label>
+                        <input type="email" id="email" class="p-2 rounded-md bg-gray-300 text-black font-montserrat outline-none focus:shadow focus:shadow-yellow-500" required autocomplete="off" />
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="message" class="text-yellow-500">Mensaje</label>
+                        <textarea id="message" class="p-2 rounded-md bg-gray-300 text-black font-montserrat outline-none focus:shadow focus:shadow-yellow-500" rows="4" required autocomplete="off"></textarea>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="submit" class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-md">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</Layout>
