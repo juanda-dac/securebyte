@@ -1,29 +1,26 @@
 ---
-import Layout from "../layout/Layout.astro"
-import VideoNetwork from "../assets/network.mp4";
+import Layout from "../layout/Layout.astro";
+import ImageNetwork from "../assets/network.jpg";
+import UIApp from "../assets/UI.png";
 import August from "../assets/August.mp4";
+
 ---
 
 <Layout title="Index">
-    <div class="w-full h-screen flex justify-center items-center font-lato" id="home">
-        <div class="w-full max-w-[1560px] h-full flex items-center relative">
-            <div class="w-full h-full flex flex-col justify-center items-center absolute -z-10 top-0">
-                <video class="w-full h-full object-cover" autoplay loop muted>
-                    <source src={VideoNetwork} type="video/mp4" />
-                </video>
-
-            </div>
+    <div class="w-full max-h-[80%] flex font-lato relative" id="home">
+        <img src={ImageNetwork.src} class="absolute w-full h-full object-cover -z-20 left-0 top-0" alt="">
+        <div class="w-full h-[80%] flex items-center bg-black/80 py-10 pt-14">
             <div class="w-full h-full flex justify-center items-center">
-                <div class="max-w-[700px] bg-slate-600/50 backdrop-blur-md backdrop-brightness-125 m-4 p-4 rounded-lg flex flex-col gap-2 leading-none">
+                <div class="max-w-[700px] flex flex-col gap-2 leading-none">
                     <div class="w-full flex justify-center">
-                        <ion-icon class="text-yellow-500 text-[64px] md:text-[80px]" name="globe-outline"></ion-icon>
+                        <ion-icon class="text-white text-[64px] md:text-[80px]" name="globe-outline"></ion-icon>
                     </div>
                     <h1 class="text-2xl lg:text-3xl leading-none text-center font-bold text-white">En SecureByte protegemos tus datos y potenciamos tu software</h1>
-                    <p class="italic text-center text-yellow-500 lg:text-lg">Desarrollamos soluciones de software a la medida de tus necesidades</p>
+                    <p class="italic text-center text-gray-300 lg:text-lg">Desarrollamos soluciones de software a la medida de tus necesidades</p>
     
                     <div class="w-full flex justify-center">
                         <a href="#contact">
-                            <button class="px-4 py-2 border border-yellow-500 text-yellow-500 rounded-sm lg:text-lg hover:bg-yellow-500 hover:text-gray-900 transition-all ease-out duration-300">
+                            <button class="px-4 py-2 border border-gray-300 text-gray-300 rounded-sm lg:text-lg hover:scale-90 hover:font-semibold transition-all ease-out duration-300">
                                 Habla con un experto
                             </button>
                         </a>
@@ -43,12 +40,13 @@ import August from "../assets/August.mp4";
                 </div>
                 <h2 class="text-3xl font-bold text-center text-yellow-500">Nosotros</h2>
                 <div class="">
-                    <h3 class="text-lg font-bold text-center text-yellow-400">¿Quiénes somos?</h3>
+                    <h3 class="text-lg text-center text-yellow-400">¿Quiénes somos?</h3>
                     <p class="text-justify text-white font-thin">
                         En <b>SecureByte</b>, somos una empresa dedicada al desarrollo de software y ciberseguridad, apasionados por crear soluciones tecnológicas innovadoras y seguras que impulsen el éxito de nuestros clientes. Nuestro equipo de expertos combina creatividad, experiencia y compromiso para ofrecer servicios de alta calidad, diseñados a la medida de tus necesidades. Guiados por valores como la integridad, la excelencia y la responsabilidad, trabajamos para proteger tu información, optimizar tus procesos y construir un futuro digital sostenible. ¡En SecureByte, protegemos tus datos y potenciamos tu negocio!
                     </p>
                 </div>
-                <div class="flex flex-col md:flex-row gap-6">
+                <!-- Mision y vision -->
+                <div class="flex flex-col md:hidden gap-6">
                     <div class="flex flex-col">
                         <h3 class="text-lg text-center font-bold text-yellow-500">Misión</h3>
                         <p class="italic  font-thin text-white text-justify">
@@ -63,10 +61,11 @@ import August from "../assets/August.mp4";
                     </div>
                 </div>
             </div>
-            <div class="p-10 flex justify-center">
+            <div class="p-10 flex flex-col items-center gap-2">
+                <div style="width: 100%;" class="hidden md:block"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Digital Technology Presentation" frameborder="0" width="1200px" height="675px" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/673d313a9fe7189d5c7be0b4" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
                 <a href="https://view.genially.com/673d313a9fe7189d5c7be0b4/presentation-digital-technology-presentation" target="_blank">
-                    <button class="px-4 py-3 bg-yellow-500 text-gray-900 rounded-md">
-                        Ver presentación
+                    <button class="px-4 py-3 text-yellow-500 border border-yellow-500 rounded-md hover:scale-90">
+                        Ampliar presentación
                     </button>
                 </a>
             </div>
@@ -74,37 +73,37 @@ import August from "../assets/August.mp4";
                 <h2 class="text-3xl font-bold text-center text-yellow-500">Nuestros valores</h2>
                 <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="flex flex-col">
-                        <h3 class="text-lg font-bold text-yellow-500">Innovación</h3>
+                        <h3 class="text-lg text-yellow-500">Innovación</h3>
                         <p class="text-white font-thin">
                             Nos esforzamos por estar a la vanguardia de la tecnología, desarrollando soluciones creativas y eficientes que resuelvan los desafíos más complejos.
                         </p>
                     </div>
                     <div class="flex flex-col">
-                        <h3 class="text-lg font-bold text-yellow-500">Integridad</h3>
+                        <h3 class="text-lg text-yellow-500">Integridad</h3>
                         <p class="text-white font-thin">
                             Actuamos con honestidad, transparencia y responsabilidad en todas nuestras interacciones, promoviendo la confianza y el respeto mutuo.
                         </p>
                     </div>
                     <div class="flex flex-col">
-                        <h3 class="text-lg font-bold text-yellow-500">Excelencia</h3>
+                        <h3 class="text-lg text-yellow-500">Excelencia</h3>
                         <p class="text-white font-thin">
                             Nos comprometemos a ofrecer servicios y productos de la más alta calidad, superando constantemente las expectativas de nuestros clientes.
                         </p>
                     </div>
                     <div class="flex flex-col">
-                        <h3 class="text-lg font-bold text-yellow-500">Colaboración</h3>
+                        <h3 class="text-lg text-yellow-500">Colaboración</h3>
                         <p class="text-white font-thin">
                             Fomentamos un ambiente de trabajo colaborativo, donde el intercambio de ideas y el trabajo en equipo son fundamentales para alcanzar nuestros objetivos comunes.
                         </p>
                     </div>
                     <div class="flex flex-col">
-                        <h3 class="text-lg font-bold text-yellow-500">Responsabilidad</h3>
+                        <h3 class="text-lg text-yellow-500">Responsabilidad</h3>
                         <p class="text-white font-thin">
                             Asumimos la responsabilidad de nuestras acciones y decisiones, asegurando un impacto positivo en nuestros clientes, empleados y la sociedad en general.
                         </p>
                     </div>
                     <div class="flex flex-col">
-                        <h3 class="text-lg font-bold text-yellow-500">Sostenibilidad</h3>
+                        <h3 class="text-lg text-yellow-500">Sostenibilidad</h3>
                         <p class="text-white font-thin">
                             Nos comprometemos a implementar prácticas sostenibles en todas nuestras operaciones, minimizando nuestro impacto ambiental y promoviendo un futuro más verde.
                         </p>
@@ -116,7 +115,7 @@ import August from "../assets/August.mp4";
 
     <!-- Servicios -->
     <div class="w-full bg-gray-800 flex justify-center" id="services">
-        <div class="flex flex-col gap-4 p-4 max-w-[1000px]">
+        <div class="font-roboto flex flex-col gap-4 p-4 max-w-[1000px]">
             <div class="flex flex-col">
                 <div class="w-full flex justify-center text-yellow-500 text-[64px]" id="icon">
                     <ion-icon name="construct-outline"></ion-icon>
@@ -128,42 +127,42 @@ import August from "../assets/August.mp4";
             </div>
             <div class="flex flex-col gap-4"></div>
                 <div class="flex flex-col">
-                    <h3 class="text-lg font-bold text-yellow-500">Desarrollo de Software a Medida</h3>
+                    <h3 class="text-lg text-yellow-500">Desarrollo de Software a Medida</h3>
                     <p class="text-white font-thin">
                         Creamos soluciones de software personalizadas que se adaptan a las necesidades específicas de tu negocio, garantizando eficiencia y escalabilidad.
                     </p>
                 </div>
                 <div class="flex flex-col">
-                    <h3 class="text-lg font-bold text-yellow-500">Consultoría en Ciberseguridad</h3>
+                    <h3 class="text-lg text-yellow-500">Consultoría en Ciberseguridad</h3>
                     <p class="text-white font-thin">
                         Ofrecemos servicios de consultoría para proteger tu infraestructura digital, identificando y mitigando riesgos de seguridad.
                     </p>
                 </div>
                 <div class="flex flex-col">
-                    <h3 class="text-lg font-bold text-yellow-500">Integración de Sistemas</h3>
+                    <h3 class="text-lg text-yellow-500">Integración de Sistemas</h3>
                     <p class="text-white font-thin">
                         Facilitamos la integración de diferentes sistemas y aplicaciones para optimizar los procesos de tu empresa y mejorar la productividad.
                     </p>
                 </div>
                 <div class="flex flex-col">
-                    <h3 class="text-lg font-bold text-yellow-500">Desarrollo de Aplicaciones Móviles</h3>
+                    <h3 class="text-lg text-yellow-500">Desarrollo de Aplicaciones Móviles</h3>
                     <p class="text-white font-thin">
                         Diseñamos y desarrollamos aplicaciones móviles intuitivas y funcionales para mejorar la experiencia de tus clientes y empleados.
                     </p>
                 </div>
                 <div class="flex flex-col">
-                    <h3 class="text-lg font-bold text-yellow-500">Soporte Técnico y Mantenimiento</h3>
+                    <h3 class="text-lg text-yellow-500">Soporte Técnico y Mantenimiento</h3>
                     <p class="text-white font-thin">
                         Brindamos soporte técnico continuo y servicios de mantenimiento para asegurar el correcto funcionamiento de tus sistemas y aplicaciones.
                     </p>
                 </div>
                 <div class="py-2 w-full flex flex-col gap-4 justify-center" id="Video">
-                    <video class="w-full h-full object-cover" controls loop>
+                    <!-- <video class="w-full h-full object-cover" controls loop>
                         <source src={August} type="video/mp4" />
-                    </video>
+                    </video> -->
                     <div class="w-full flex justify-center">
                         <a href="https://share.vidnoz.com/aivideo?id=aishare-HQjqy9d2TPORZd6582XnhqXM173236147911783800" target="_blank">
-                            <button class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-md">
+                            <button class="px-4 py-3 text-yellow-500 border border-yellow-500 rounded-md hover:scale-90">
                                 Ver video
                             </button>
                         </a>
@@ -173,9 +172,34 @@ import August from "../assets/August.mp4";
         </div>
     </div>
 
+    <div class="w-full flex justify-center bg-slate-700" id="app">
+        <div class="font-roboto w-full max-w-[1000px]">
+            <div class="p-4">
+                <div class="flex flex-col gap-2">
+                    <div class="w-full flex justify-center text-yellow-500 text-[64px]" id="icon">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+                    <h2 class="text-3xl font-bold text-center text-yellow-500">Aplicación Móvil</h2>
+                    <img src={UIApp.src} class="w-full" alt="">
+                    <p class="text-center text-white font-thin">
+                        Descarga nuestra aplicación móvil para acceder a nuestros servicios desde cualquier lugar y en cualquier momento.
+                    </p>
+                </div>
+            
+                <div class="flex justify-center">
+                    <a href="/public/CiberSec.apk" target="_blank">
+                        <button class="px-4 py-3 text-yellow-500 border border-yellow-500 rounded-md hover:scale-90">
+                            Descargar
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Contcacto -->
-    <div class="w-full flex justify-center bg-slate-700" id="contact">
-        <div class="w-full max-w-[1000px]">
+    <div class="w-full flex justify-center bg-slate-800" id="contact">
+        <div class="font-montserrat w-full max-w-[1000px]">
             <div class="p-4">
                 <div class="flex flex-col">
                     <div class="w-full flex justify-center text-yellow-500 text-[64px]" id="icon">
@@ -200,7 +224,7 @@ import August from "../assets/August.mp4";
                         <textarea id="message" class="p-2 rounded-md bg-gray-300 text-black font-montserrat outline-none focus:shadow focus:shadow-yellow-500" rows="4" required autocomplete="off"></textarea>
                     </div>
                     <div class="flex justify-center">
-                        <button type="submit" class="px-4 py-2 bg-yellow-500 text-gray-900 rounded-md">
+                        <button type="submit" class="px-4 py-3 text-yellow-500 border border-yellow-500 rounded-md hover:scale-90">
                             Enviar
                         </button>
                     </div>
@@ -209,3 +233,12 @@ import August from "../assets/August.mp4";
         </div>
     </div>
 </Layout>
+
+<style>
+    .banner{
+        background-image: url('../assets/network.jpg') !important;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
+
